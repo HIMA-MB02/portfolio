@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { ThemeProvider } from 'styled-components';
 import theme from './theme';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { RouteConfig } from './routes';
 
 const root = ReactDOM.createRoot(
@@ -12,13 +12,13 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           {Object.entries(RouteConfig).map(([path, Component]) => (
             <Route key={path} path={path} element={<Component />} />
           ))}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   </React.StrictMode>
 );
