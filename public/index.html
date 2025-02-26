@@ -16,9 +16,15 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/himanshu.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- Google Fonts: Comfortaa, Major Mono, Brush & Modurestic -->
+    <!-- Preconnect to Speed Up Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Comforter+Brush&family=Major+Mono+Display&family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <!-- Load Fonts Without Blocking Rendering -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Comforter+Brush&family=Major+Mono+Display&family=Moderustic:wght@400;700&display=swap" media="print" onload="this.onload=null;this.removeAttribute('media');">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Comforter+Brush&family=Major+Mono+Display&family=Moderustic:wght@400;700&display=swap">
+    </noscript>
+    
     <title>Himanshu's Portfolio</title>
   </head>
   <body>
