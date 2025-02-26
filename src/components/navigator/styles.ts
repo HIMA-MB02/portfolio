@@ -58,19 +58,19 @@ export const StyledNavigationWrapper = styled.div((p) => `
 
 export const StyledCardWrapper = styled.div`
     margin: 2rem;
-    width: 9rem;
-    height: 9rem;
+    width: 11rem;
+    height: 10rem;
     box-sizing: border-box;
 
     @media (max-width: 768px) {
         margin: 1rem;
-        width: 8rem;
+        width: 8.5rem;
         height: 8rem;
     }
 
     @media (max-width: 480px) {
         margin: 0.5rem;
-        width: 5rem;
+        width: 5.2rem;
         height: 5rem;
     }
 `;

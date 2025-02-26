@@ -1,22 +1,40 @@
-import { Text } from "../../atoms";
+import { useNavigate } from "react-router-dom";
+import { Button, Text } from "../../atoms";
 import { BorderCard } from "../../atoms/cards";
+import { AppRoutes } from "../../routes";
 import UppercaseTransition from "../uppercase-transitions";
-import { StyledContentWrapper, StyledWrapper, StyledParagraphContainer } from "./styles";
+import { StyledContentWrapper, StyledWrapper, StyledParagraphContainer, StyledLeftSectionWrapper, StyledDesktopButtonWrapper, StyledMobileButtonWrapper } from "./styles";
+
+const KnowMoreButton = () => {
+  const navigate = useNavigate();
+  return <Button color="blueGradient" onClick={() => navigate(AppRoutes.JOURNEY)}>Find Out More?</Button>
+}
 
 export default function DDDSection() {
   return (
     <StyledWrapper>
+      <Text.Title>About Me</Text.Title>
       <BorderCard>
         <StyledContentWrapper>
-          <UppercaseTransition />
+          <StyledLeftSectionWrapper>
+            <UppercaseTransition />
+            <StyledDesktopButtonWrapper>
+              <KnowMoreButton />
+            </StyledDesktopButtonWrapper>
+          </StyledLeftSectionWrapper>
           <StyledParagraphContainer>
+            <Text.Para>
+              I'm a software engineer, a proud husband, and a dog parent—building cool stuff while balancing code, love, and tail wags. 🚀🐶💙
+            </Text.Para>
             <Text.Para>
               I’ve been building websites since way back when 'CSS grid' was
               just a dream 🌟 and 'responsive design' mostly involved saying
               'please' and 'thank you' to clients 🙏.
             </Text.Para>
-            <br />
             <Text.Para>The internet and I have been through a lot together 🌐❤️.</Text.Para>
+            <StyledMobileButtonWrapper>
+              <KnowMoreButton />
+            </StyledMobileButtonWrapper>
           </StyledParagraphContainer>
         </StyledContentWrapper>
       </BorderCard>

@@ -8,8 +8,8 @@ export const StyledPara = styled.div<{ $color: keyof typeof theme.color }>`
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -21,15 +21,15 @@ export const StyledPara = styled.div<{ $color: keyof typeof theme.color }>`
   padding: 0 0.5rem;
 
   @media (min-width: 768px) {
-    font-size: 1.1rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
     padding: 0 1rem;
     margin: 0.75rem 0;
   }
 
   @media (min-width: 1024px) {
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
     padding: 0;
     margin: 1rem 0;
   }

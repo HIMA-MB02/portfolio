@@ -19,8 +19,10 @@ import {
   StyledFillCardWrapper,
 } from "./styles";
 import { NavigationBar } from "../../components";
+import { ExternalLinks } from "../../constants";
 
 export default function GetInTouch() {
+  const openLink = (link: ExternalLinks) => window.open(link, '_blank');
   return (
     <StyledContainer>
       <NavigationBar />
@@ -51,21 +53,21 @@ export default function GetInTouch() {
         <StyledContactCardsWrapper>
           <StyledContactCardWrapper>
             <BouncyCard motion borderPulse>
-              <StyledContactImageWrapper>
+              <StyledContactImageWrapper onClick={() => openLink(ExternalLinks.LINKEDIN)}>
                 <StyledContactImage src={LinkedInIcon} alt="LinkedIn" />
               </StyledContactImageWrapper>
             </BouncyCard>
           </StyledContactCardWrapper>
           <StyledContactCardWrapper>
             <BouncyCard motion borderPulse>
-              <StyledContactImageWrapper>
+              <StyledContactImageWrapper onClick={() => openLink(ExternalLinks.INSTAGRAM)}>
                 <StyledContactImage src={InstagramIcon} alt="Instagram" />
               </StyledContactImageWrapper>
             </BouncyCard>
           </StyledContactCardWrapper>
           <StyledContactCardWrapper>
             <BouncyCard motion borderPulse>
-              <StyledContactImageWrapper>
+              <StyledContactImageWrapper onClick={() => openLink(ExternalLinks.GITHUB)}>
                 <StyledContactImage
                   src={GithubSquareIcon}
                   style={{ filter: "invert(1)" }}
@@ -76,7 +78,7 @@ export default function GetInTouch() {
           </StyledContactCardWrapper>
           <StyledContactCardWrapper>
             <BouncyCard motion borderPulse>
-              <StyledContactImageWrapper>
+              <StyledContactImageWrapper onClick={() => openLink(ExternalLinks.EMAIL)}>
                 <StyledContactImage src={EmailIcon} alt="Email" />
               </StyledContactImageWrapper>
             </BouncyCard>

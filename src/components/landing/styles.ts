@@ -28,7 +28,8 @@ export const AnimatedTextWrapper = styled.div((p) => `
 `);
 
 export const Label = styled.div`
-  margin: 4rem 0rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,12 +42,12 @@ export const Label = styled.div`
 
 export const LabelText = styled.div`
   color: ${(p) => p.theme.color.white()};
-  margin-bottom: 1rem;
+  margin: 1rem 0rem;
   text-align: center;
   padding: 0 1rem;
-
+  font-size: 1.2rem;
   @media (max-width: 480px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 `;
 

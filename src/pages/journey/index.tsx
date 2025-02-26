@@ -19,17 +19,14 @@ const Journey: React.FC = () => {
         <Text.Title font="moderustic" size="3rem">MY JOURNEY</Text.Title>
         <Text.Title font="moderustic" size="2rem"> Beyond the Resume</Text.Title>
         <StyledCenteredDescription>
-          Resumes are boring.<br />
-          Too much text, often exaggerated and lacks personal touch.
+          Resumes are boring --<br />
+          too much text, often exaggerated, and impersonal.
         </StyledCenteredDescription>
         <StyledFillCardContainer>
           <FillCard>
             <StyledFillCardContent>
               <Text.Para>
-                Here's is my approach to solving the resume problem. <br />
-                This timeline aims to reflect my growth in technology, career
-                achievements, and life's precious moments, but in a more
-                personal way.
+              Here is a timeline that has a more authentic take on my journey in tech, career, and life, highlighting the moments that truly shaped me.
               </Text.Para>
             </StyledFillCardContent>
           </FillCard>
