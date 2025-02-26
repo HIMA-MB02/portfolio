@@ -1,14 +1,10 @@
 import { Navigate } from "react-router-dom";
-import { GetInTouch, Home, Journey } from "./pages";
+import { GetInTouch, Home, MyStory } from "./pages";
+import { AppRoutes } from "./constants";
 
-export enum AppRoutes {
-  HOME = "/",
-  JOURNEY = "/journey",
-  GET_IN_TOUCH = "/get-in-touch",
-}
 export const RouteConfig: Record<AppRoutes | "*", React.ComponentType<any>> = {
   [AppRoutes.HOME]: Home,
-  [AppRoutes.JOURNEY]: Journey,
+  [AppRoutes.MY_STORY]: MyStory,
   [AppRoutes.GET_IN_TOUCH]: GetInTouch,
   "*": () => (<Navigate to={AppRoutes.HOME} replace />),
 };

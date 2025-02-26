@@ -9,14 +9,15 @@ import {
 import { NavigationBar, Timeline } from "../../components";
 import { FillCard } from "../../atoms/cards";
 import { Text } from "../../atoms";
+import { PageTitles } from "../../constants";
 
 
-const Journey: React.FC = () => {
+const MyStory: React.FC = () => {
   return (
     <StyledPageContainer>
       <NavigationBar />
       <StyledHeaderContainer>
-        <Text.Title font="moderustic" size="3rem">MY JOURNEY</Text.Title>
+        <Text.Title font="moderustic" size="3rem">{PageTitles.MY_STORY.toUpperCase()}</Text.Title>
         <Text.Title font="moderustic" size="2rem"> Beyond the Resume</Text.Title>
         <StyledCenteredDescription>
           Resumes are boring --<br />
@@ -26,8 +27,7 @@ const Journey: React.FC = () => {
           <FillCard>
             <StyledFillCardContent>
               <Text.Para>
-              Here is a timeline that has a more authentic take on my journey in tech, career, and life, highlighting the moments that truly shaped me.
-              </Text.Para>
+              Presenting <b>My Story</b> — a timeline that <b>authentically captures my journey</b> in tech, career, and life, highlighting the <b>moments that truly shaped me</b>.              </Text.Para>
             </StyledFillCardContent>
           </FillCard>
         </StyledFillCardContainer>
@@ -37,4 +37,4 @@ const Journey: React.FC = () => {
   );
 };
 
-export default Journey;
+export default MyStory;

@@ -19,7 +19,7 @@ import {
   StyledFillCardWrapper,
 } from "./styles";
 import { NavigationBar } from "../../components";
-import { ExternalLinks } from "../../constants";
+import { ExternalLinks, PageTitles } from "../../constants";
 
 export default function GetInTouch() {
   const openLink = (link: ExternalLinks) => window.open(link, '_blank');
@@ -29,7 +29,7 @@ export default function GetInTouch() {
       <StyledCardWrapper>
         <StyledTitleWrapper>
           <Text.Title font="moderustic" size="3rem">
-            LET'S CONNECT
+            {PageTitles.GET_IN_TOUCH.toUpperCase()}
           </Text.Title>
           <Text.Title font="moderustic" size="2rem">
             When it matters

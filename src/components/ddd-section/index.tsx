@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom";
 import { Button, Text } from "../../atoms";
 import { BorderCard } from "../../atoms/cards";
-import { AppRoutes } from "../../routes";
+import { AppRoutes } from "../../constants";
 import UppercaseTransition from "../uppercase-transitions";
 import { StyledContentWrapper, StyledWrapper, StyledParagraphContainer, StyledLeftSectionWrapper, StyledDesktopButtonWrapper, StyledMobileButtonWrapper } from "./styles";
 
 const KnowMoreButton = () => {
   const navigate = useNavigate();
-  return <Button color="blueGradient" onClick={() => navigate(AppRoutes.JOURNEY)}>Find Out More?</Button>
+  return <Button color="blueGradient" onClick={() => navigate(AppRoutes.MY_STORY)}>Find Out More?</Button>
 }
 
-export default function DDDSection() {
+export default function DDDSection() {  
   return (
     <StyledWrapper>
-      <Text.Title>About Me</Text.Title>
+      <Text.Title font="moderustic" size="4rem">HIMANSHU, WHO?</Text.Title>
       <BorderCard>
         <StyledContentWrapper>
           <StyledLeftSectionWrapper>

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button, Signature } from "../../atoms";
 import {
   StyledNavBarRow,
@@ -6,39 +6,48 @@ import {
   StyledSignatureDesktop,
   StyledSignatureMobile,
 } from "./styles";
-import { AppRoutes } from "../../routes";
+import { AppRoutes, PageTitles } from "../../constants";
+import { useEffect, useState } from "react";
 
 const NavigationBar = () => {
+  const { pathname } = useLocation();
   const navigate = useNavigate();
+  const [route, setRoute] = useState({
+    path: AppRoutes.HOME,
+    title: PageTitles.ABOUT_ME,
+  });
+  useEffect(() => {
+    if (pathname === AppRoutes.GET_IN_TOUCH) {
+        setRoute({
+            path: AppRoutes.MY_STORY,
+            title: PageTitles.MY_STORY,
+        });
+      } else {
+        setRoute({
+            path: AppRoutes.GET_IN_TOUCH,
+            title: PageTitles.GET_IN_TOUCH,
+        });
+      }
+  }, [pathname]);
   return (
     <StyledNavbarWrapper>
-    <StyledNavBarRow>
-        <Button
-        color="orangeGradient"
-        onClick={() => navigate(AppRoutes.HOME)}
-        >
-        Back Home
+      <StyledNavBarRow>
+        <Button color="orangeGradient" onClick={() => navigate(AppRoutes.HOME)}>
+          Back Home
         </Button>
         <StyledSignatureDesktop>
-            <Signature onClick={() => navigate(AppRoutes.HOME)} variant="small" />
+          <Signature onClick={() => navigate(AppRoutes.HOME)} variant="small" />
         </StyledSignatureDesktop>
         <Button
-        color="blueGradient"
-        onClick={() => {
-            const currentPath = window.location.pathname;
-            if (currentPath === AppRoutes.GET_IN_TOUCH) {
-            navigate(AppRoutes.JOURNEY);
-            } else {
-            navigate(AppRoutes.GET_IN_TOUCH);
-            }
-        }}
+          color="blueGradient"
+          onClick={() => navigate(route.path)}
         >
-        {window.location.pathname === AppRoutes.GET_IN_TOUCH ? "My Journey" : "Get In Touch"}
+          {route.title}
         </Button>
-    </StyledNavBarRow>
-    <StyledSignatureMobile>
+      </StyledNavBarRow>
+      <StyledSignatureMobile>
         <Signature onClick={() => navigate(AppRoutes.HOME)} variant="small" />
-    </StyledSignatureMobile>
+      </StyledSignatureMobile>
     </StyledNavbarWrapper>
   );
 };

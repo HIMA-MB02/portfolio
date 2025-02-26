@@ -16,11 +16,15 @@ export const StyledMain = styled.div`
   min-width: 100px;
   padding: 0 1rem;
   margin: 0 auto;
-  height: 180px;
+  height: 150px; /* Adjusted for 2.5em font size and 50px line height */
 
   @media (min-width: 768px) {
     padding: 0 20px;
-    height: 240px;
+    height: 210px; /* Adjusted for 3.2em font size and 70px line height */
+  }
+
+  @media (min-width: 1024px) {
+    height: 240px; /* Adjusted for 4em font size and 80px line height */
   }
 `;
 
@@ -29,7 +33,7 @@ export const StyledAnimatedDiv = styled(animated.div)`
   width: 100%;
   color: white;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   font-size: 2.5em;
   font-weight: 800;
@@ -49,6 +53,7 @@ export const StyledAnimatedDiv = styled(animated.div)`
   }
 
   @media (min-width: 1024px) {
+    justify-content: flex-start;
     font-size: 4em;
     line-height: 80px;
     letter-spacing: 1.6px;

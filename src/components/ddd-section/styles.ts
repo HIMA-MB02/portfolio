@@ -8,10 +8,13 @@ export const StyledWrapper = styled.div`
   width: 95%;
   height: 100%;
   margin: 2rem 0;
+  gap: 2rem;
+  text-align: center;
 
   @media (min-width: 1024px) {
     width: 85%;
     margin: 3rem 0;
+    text-align: left;
   }
 
   @media (min-width: 1440px) {
@@ -55,21 +58,23 @@ export const StyledContentWrapper = styled.div`
   flex-wrap: wrap;
   padding: 1rem;
   box-sizing: border-box;
+  gap: 2rem;
+
+  @media (min-width: 1024px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 `;
 
 export const StyledParagraphContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   padding: 0 1rem;
   box-sizing: border-box;
 
-
   @media (min-width: 1024px) {
-    max-width: 21rem;
-  }
-
-  @media (min-width: 1440px) {
-    max-width: 26rem;
+    flex: 1;
+    min-width: 0;
   }
 `;

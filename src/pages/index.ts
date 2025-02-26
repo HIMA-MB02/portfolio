@@ -1,8 +1,8 @@
 import Home from "./home";
 import GetInTouch from "./get-in-touch";
-import Journey from "./journey";
+import MyStory from "./my-story";
 export {
     Home,
     GetInTouch,
-    Journey
+    MyStory
 }
