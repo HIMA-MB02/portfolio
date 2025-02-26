@@ -28,3 +28,5 @@ jobs:
           branch: gh-pages  # Target branch for GitHub Pages
           folder: build  # Folder containing the output
           clean: true  # Cleans old files before deploying
+          single-commit: true
+          commit-message: "🚀 Auto-deploy from GitHub Actions"
