@@ -70,12 +70,16 @@ export const StyledCardWrapper = styled.div((p) => `
 `);
 
 export const StyledInroWrapper = styled.div`
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+
+    @media (min-width: 768px) {
+        width: 80%;
+    }
 `
 
 export const StyledContactCardsWrapper = styled.div`
