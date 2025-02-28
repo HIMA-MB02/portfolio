@@ -114,3 +114,26 @@ export const StyledTimelineContent = styled.div`
     font-size: ${(p) => p.theme.fontSize.sm};
   }
 `;
+
+
+export const StyledShowcaseButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 2rem 0;
+`;
+
+export const StyledImageContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+`;
+export const StyledTimelineImage = styled.img`
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+`;

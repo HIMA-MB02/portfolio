@@ -9,10 +9,11 @@ import { RouteConfig } from './routes';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
+const basename = process.env.PUBLIC_URL;
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <HashRouter>
+      <HashRouter basename={basename}>
         <Routes>
           {Object.entries(RouteConfig).map(([path, Component]) => (
             <Route key={path} path={path} element={<Component />} />

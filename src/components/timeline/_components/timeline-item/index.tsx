@@ -5,6 +5,9 @@ import {
   StyledTimelineItemContent,
   StyledTimelineItem,
   StyledTimelineDateMobile,
+  StyledShowcaseButtonContainer,
+  StyledImageContainer,
+  StyledTimelineImage,
 } from "./styles";
 import { type TimelineItemType } from "../../types";
 import { Text } from "../../../../atoms";
@@ -32,11 +35,20 @@ export const TimelineItem = <T extends string>({
         <StyledTimelineDateMobile>
           {item.date.month} {item.date.year}
         </StyledTimelineDateMobile>
+        {item.imageSrc && (
+          <StyledImageContainer>
+            <StyledTimelineImage src={item.imageSrc} />
+          </StyledImageContainer>
+        )}
         <StyledTimelineContent>
           {item.content.map((content, index) => (
             <Text.Para color="muted" key={index}>{content}</Text.Para>
           ))}
         </StyledTimelineContent>
+        <StyledShowcaseButtonContainer>
+          {item.ShowcaseButtonA}
+          {item.ShowcaseButtonB}
+        </StyledShowcaseButtonContainer>
       </StyledTimelineItemContent>
     </StyledTimelineItem>
   );

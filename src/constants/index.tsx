@@ -17,3 +17,9 @@ export enum PageTitles {
   MY_STORY = "My Story",
   GET_IN_TOUCH = "Get In Touch",
 }
+
+export enum GithubProjectLinks {
+  GALACTA_GAME = "https://github.com/HIMA-MB02/galacta-game",
+  VAHAN_PURCHASE_WEBSITE = "https://github.com/HIMA-MB02/CarPortal",
+  MINI_BLOCKCHAIN_IN_TYPESCRIPT = "https://github.com/HIMA-MB02/BlockchainJS",
+}

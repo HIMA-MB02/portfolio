@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { TimelineFilters } from "./_components/filters";
-import { data } from "./data";
 import { StyledTimelineContainer, StyledTimelinePresent } from "./styles";
-import { type TimelineTags } from "./types";
+import { MonthOrder, type TimelineTags } from "./types";
 import { TimelineItem } from "./_components/timeline-item";
-
+import { data } from "../../constants/story-data";
 const Timeline = () => {
   const [selectedTag, setSelectedTag] = useState<TimelineTags | undefined>(
     undefined
@@ -17,6 +16,12 @@ const Timeline = () => {
       />
       <StyledTimelineContainer>
         {data
+          .sort((a, b) => {
+            return (
+              Number(a.date.year) - Number(b.date.year) ||
+              MonthOrder[a.date.month] - MonthOrder[b.date.month]
+            );
+          })
           .filter((item) =>
             selectedTag ? item.tags?.includes(selectedTag) : true
           )
