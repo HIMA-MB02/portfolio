@@ -120,7 +120,7 @@ export const StyledShowcaseButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 4rem;
   width: 100%;
   margin: 2rem 0;
 `;

@@ -1,3 +1,4 @@
+import theme from "@/theme";
 import styled, { css, keyframes } from "styled-components";
 
 const animatedgradient = keyframes`
@@ -13,20 +14,23 @@ const animatedgradient = keyframes`
 `;
 
 export const StyledFill = styled.div<{
-  $borderColor: "blueGradient" | "orangeGradient";
+  $borderColor: keyof typeof theme.color;
   $borderMotion: boolean;
 }>`
-  border-radius: 2rem;
-  background: ${
-    (p) => p.$borderColor === "orangeGradient"
-      ? p.theme.color.orangeGradient
-      : p.theme.color.blueGradient
-  };
+  border-radius: 1rem;
+  background: ${(p) => {
+    const colorValue = p.theme.color[p.$borderColor];
+    return typeof colorValue === "function" ? colorValue() : colorValue;
+  }};
   padding: 0.25rem;
   box-sizing: border-box;
-  ${(p) => p.$borderMotion &&
+  ${(p) =>
+    p.$borderMotion &&
     css`
       animation: ${animatedgradient} 1s ease alternate infinite;
       background-size: 300% 300%;
     `}
+  @media (min-width: 768px) {
+    border-radius: 2rem;
+  }
 `;

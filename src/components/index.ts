@@ -7,6 +7,7 @@ import DDDSection from "./ddd-section";
 import MyMantrasSection from "./my-mantras-section";
 import BuiltWithSection from "./built-with-section";
 import Timeline from "./timeline";
+import HotTakes from "./hot-takes";
 
 export {
     Navigator,
@@ -17,5 +18,6 @@ export {
     DDDSection,
     MyMantrasSection,
     BuiltWithSection,
-    Timeline
+    Timeline,
+    HotTakes
 }

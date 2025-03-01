@@ -8,6 +8,7 @@ import { CrossIcon } from "../../../theme/icons";
 interface BouncyCardProps extends CardProps {
   borderPulse?: boolean;
   expandedContent?: React.ReactNode;
+  color?: 'blueGradient' | 'orangeGradient';
 }
 
 export default function BouncyCard({

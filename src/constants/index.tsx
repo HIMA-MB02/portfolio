@@ -18,8 +18,13 @@ export enum PageTitles {
   GET_IN_TOUCH = "Get In Touch",
 }
 
-export enum GithubProjectLinks {
+export enum ProjectGithubLinks {
   GALACTA_GAME = "https://github.com/HIMA-MB02/galacta-game",
   VAHAN_PURCHASE_WEBSITE = "https://github.com/HIMA-MB02/CarPortal",
   MINI_BLOCKCHAIN_IN_TYPESCRIPT = "https://github.com/HIMA-MB02/BlockchainJS",
+  G_GROUP_EXIM = "https://github.com/HIMA-MB02/GGROUPEXIM",
+}
+
+export enum ProjectSiteLinks {
+  G_GROUP_EXIM = "https://hima-mb02.github.io/GGROUPEXIM/#/home"
 }

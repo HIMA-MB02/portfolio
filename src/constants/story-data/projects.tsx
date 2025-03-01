@@ -1,4 +1,5 @@
-import { GithubProjectLinks } from "..";
+import { Button } from "@/atoms";
+import { ProjectGithubLinks, ProjectSiteLinks } from "..";
 import {
   TimelineTags,
   TimelineItemType,
@@ -16,7 +17,7 @@ export const projects: TimelineItemType<TimelineTags.Project>[] = [
     ],
     imageSrc: galactaGameImage,
     tags: [TimelineTags.Project],
-    ShowcaseButtonA: <GithubButton url={GithubProjectLinks.GALACTA_GAME} />,
+    ShowcaseButtonA: <GithubButton url={ProjectGithubLinks.GALACTA_GAME} />,
   },
   {
     date: { month: "NOV", year: "2017" },
@@ -27,7 +28,7 @@ export const projects: TimelineItemType<TimelineTags.Project>[] = [
       "I am unable to host this project due to IP rights, but I've shared the github link below.",
     ],
     tags: [TimelineTags.Project],
-    ShowcaseButtonA: <GithubButton url={GithubProjectLinks.GALACTA_GAME} />,
+    ShowcaseButtonA: <GithubButton url={ProjectGithubLinks.VAHAN_PURCHASE_WEBSITE} />,
   },
   {
     date: { month: "SEP", year: "2020" },
@@ -37,7 +38,20 @@ export const projects: TimelineItemType<TimelineTags.Project>[] = [
       "This project gave me hands-on experience with cryptographic hashing, data structures, and consensus mechanisms."
     ],
     tags: [TimelineTags.Project],
-    ShowcaseButtonA: <GithubButton url={GithubProjectLinks.MINI_BLOCKCHAIN_IN_TYPESCRIPT} />,
+    ShowcaseButtonA: <GithubButton url={ProjectGithubLinks.MINI_BLOCKCHAIN_IN_TYPESCRIPT} />,
+    imageSrc: blockchainImage,
+  },
+  {
+    date: { month: "FEB", year: "2021" },
+    title: "G Group Exim Website",
+    content: [
+      "This is the webiste of my own company, G Group Exim. I had started this comany to export Coir Pith to the world.",
+      "Though I closed the company, I had super fun branding something from scratch.",
+      "Techinically, this was my first startup experience 😄"
+    ],
+    tags: [TimelineTags.Project],
+    ShowcaseButtonA: <GithubButton url={ProjectGithubLinks.G_GROUP_EXIM} />,
+    ShowcaseButtonB: <Button color="orangeGradient" onClick={() => window.open(ProjectSiteLinks.G_GROUP_EXIM, "_blank")}>Visit Website</Button>,
     imageSrc: blockchainImage,
   },
 ];
