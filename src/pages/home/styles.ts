@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
     align-items: center;
     background-color: black;
     margin-bottom: 8rem;
-    padding: 1rem;
     box-sizing: border-box;
     animation: fadeIn 0.5s ease-in;
 

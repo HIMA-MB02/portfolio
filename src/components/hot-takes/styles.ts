@@ -75,7 +75,7 @@ export const StyledTitleSpan = styled.span`
 `;
 
 export const StyledCarouselWrapper = styled.div`
-  max-width: 100vw;
+  max-width: 100%;
   position: relative;
   overflow-x: hidden;
   margin-top: 2rem;

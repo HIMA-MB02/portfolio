@@ -55,16 +55,16 @@ const HotTakes = () => {
           <SplideSlide>
             <FillCard color="orangeGradient">
               <HotTakesCard>
-                <StyledBigText>DAMN.</StyledBigText>
-                <StyledSmallText>I'm a fan!</StyledSmallText>
+                <StyledSmallText>Strong types don’t fix</StyledSmallText>
+                <StyledBigText>weak logic.</StyledBigText>
               </HotTakesCard>
             </FillCard>
           </SplideSlide>
           <SplideSlide>
             <FillCard color="purpleGradient">
               <HotTakesCard>
-                <StyledBigText>Nothing is True</StyledBigText>
-                <StyledSmallText>Everything is Permitted</StyledSmallText>
+                <StyledBigText>Scalability = readability</StyledBigText>
+                <StyledSmallText>not complexity.</StyledSmallText>
               </HotTakesCard>
             </FillCard>
           </SplideSlide>
@@ -87,8 +87,8 @@ const HotTakes = () => {
           <SplideSlide>
             <FillCard color="redGradient">
               <HotTakesCard>
-                <StyledBigText>Dicipline</StyledBigText>
-                <StyledSmallText>Beats Talent</StyledSmallText>
+                <StyledBigText>The best UX </StyledBigText>
+                <StyledSmallText>is the one you don’t notice.</StyledSmallText>
               </HotTakesCard>
             </FillCard>
           </SplideSlide>
