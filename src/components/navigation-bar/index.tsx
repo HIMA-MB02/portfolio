@@ -12,6 +12,18 @@ import { useEffect, useState } from "react";
 const NavigationBar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
+  
+  const handleNavigation = (path: string, pageName: string) => {
+    // Track page navigation in Google Analytics
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'page_navigation', {
+        page_title: pageName,
+        page_location: path,
+        event_category: 'navigation'
+      });
+    }
+    navigate(path);
+  };
   const [route, setRoute] = useState({
     path: AppRoutes.HOME,
     title: PageTitles.ABOUT_ME,
@@ -32,21 +44,21 @@ const NavigationBar = () => {
   return (
     <StyledNavbarWrapper>
       <StyledNavBarRow>
-        <Button color="orangeGradient" onClick={() => navigate(AppRoutes.HOME)}>
+        <Button color="orangeGradient" onClick={() => handleNavigation(AppRoutes.HOME, 'Home')}>
           Back Home
         </Button>
         <StyledSignatureDesktop>
-          <Signature onClick={() => navigate(AppRoutes.HOME)} variant="small" />
+          <Signature onClick={() => handleNavigation(AppRoutes.HOME, 'Home')} variant="small" />
         </StyledSignatureDesktop>
         <Button
           color="blueGradient"
-          onClick={() => navigate(route.path)}
+          onClick={() => handleNavigation(route.path, route.title)}
         >
           {route.title}
         </Button>
       </StyledNavBarRow>
       <StyledSignatureMobile>
-        <Signature onClick={() => navigate(AppRoutes.HOME)} variant="small" />
+        <Signature onClick={() => handleNavigation(AppRoutes.HOME, 'Home')} variant="small" />
       </StyledSignatureMobile>
     </StyledNavbarWrapper>
   );

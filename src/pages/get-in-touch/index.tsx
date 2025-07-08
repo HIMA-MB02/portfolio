@@ -23,7 +23,22 @@ import { ExternalLinks, PageTitles } from "../../constants";
 import { createPersonStructuredData } from "@/utils/structuredData";
 
 export default function GetInTouch() {
-  const openLink = (link: ExternalLinks) => window.open(link, '_blank');
+  const openLink = (link: ExternalLinks) => {
+    // Track contact method clicks in Google Analytics
+    if (typeof window !== 'undefined' && window.gtag) {
+      const linkName = link.includes('linkedin') ? 'LinkedIn' :
+                      link.includes('instagram') ? 'Instagram' :
+                      link.includes('github') ? 'GitHub' :
+                      link.includes('mailto') ? 'Email' : 'Unknown';
+      
+      window.gtag('event', 'contact_click', {
+        contact_method: linkName,
+        outbound: true,
+        event_category: 'engagement'
+      });
+    }
+    window.open(link, '_blank');
+  };
   return (
     <StyledContainer>
       <SEO 
