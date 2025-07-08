@@ -7,7 +7,6 @@ import {
   StyledTimelineDateMobile,
   StyledShowcaseButtonContainer,
   StyledImageContainer,
-  StyledTimelineImage,
 } from "./styles";
 import { type TimelineItemType } from "../../types";
 import { Text } from "../../../../atoms";
@@ -35,9 +34,9 @@ export const TimelineItem = <T extends string>({
         <StyledTimelineDateMobile>
           {item.date.month} {item.date.year}
         </StyledTimelineDateMobile>
-        {item.imageSrc && (
+        {item.imageElement && (
           <StyledImageContainer>
-            <StyledTimelineImage src={item.imageSrc} />
+            {item.imageElement}
           </StyledImageContainer>
         )}
         <StyledTimelineContent>

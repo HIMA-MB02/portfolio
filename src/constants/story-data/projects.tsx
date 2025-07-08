@@ -13,9 +13,9 @@ export const projects: TimelineItemType<TimelineTags.Project>[] = [
     title: "Galacta Game",
     content: [
       "Galacta Game was my first-ever game project, built using C and SDL2, and a proud milestone in my coding journey. It was my first venture outside the web development world, where I explored game mechanics, memory management, and real-time rendering. The game features adaptive difficulty, dynamic enemy behavior, and a structured scoring system.",
-      "Looking back, this project was a stepping stone into thinking beyond web apps and embracing low-level programming challenges. 🚀🎮",
+      "Looking back, this project was a stepping stone into thinking beyond web apps and embracing low-level programming challenges. 🚀��",
     ],
-    imageSrc: galactaGameImage,
+    imageElement: <img src={galactaGameImage} alt="Galacta Game" style={{ width: '90%', height: 'auto', borderRadius: '8px' }} />,
     tags: [TimelineTags.Project],
     ShowcaseButtonA: <GithubButton url={ProjectGithubLinks.GALACTA_GAME} />,
   },
@@ -39,19 +39,6 @@ export const projects: TimelineItemType<TimelineTags.Project>[] = [
     ],
     tags: [TimelineTags.Project],
     ShowcaseButtonA: <GithubButton url={ProjectGithubLinks.MINI_BLOCKCHAIN_IN_TYPESCRIPT} />,
-    imageSrc: blockchainImage,
-  },
-  {
-    date: { month: "FEB", year: "2021" },
-    title: "G Group Exim Website",
-    content: [
-      "This is the webiste of my own company, G Group Exim. I had started this comany to export Coir Pith to the world.",
-      "Though I closed the company, I had super fun branding something from scratch.",
-      "Techinically, this was my first startup experience 😄"
-    ],
-    tags: [TimelineTags.Project],
-    ShowcaseButtonA: <GithubButton url={ProjectGithubLinks.G_GROUP_EXIM} />,
-    ShowcaseButtonB: <Button color="orangeGradient" onClick={() => window.open(ProjectSiteLinks.G_GROUP_EXIM, "_blank")}>Visit Website</Button>,
-    imageSrc: blockchainImage,
-  },
+    imageElement: <img src={blockchainImage} alt="Mini Blockchain" style={{ width: '90%', height: 'auto', borderRadius: '8px' }} />,
+  }
 ];

@@ -2,6 +2,7 @@ import {
   TimelineTags,
   TimelineItemType,
 } from "../../components/timeline/types";
+import { bahrainImage, coepImage, marriageImage } from "./images";
 
 export const personal: TimelineItemType<
   TimelineTags.Personal | TimelineTags.Education
@@ -24,6 +25,7 @@ export const personal: TimelineItemType<
       "Fun fact: My father, sister, and wife all share the same birthday—February 8th. Coincidence? Or fate?",
     ],
     tags: [TimelineTags.Personal],
+    imageElement: <img src={marriageImage} alt="Marriage" style={{ width: '30%', height: 'auto', objectFit: 'contain', borderRadius: '8px' }} />,
   },
   {
     date: { month: "FEB", year: "2002" },
@@ -32,17 +34,20 @@ export const personal: TimelineItemType<
       "I completed my schooling in Bahrain under the CBSE curriculum, attending multiple schools on the island—Asian School, New Indian School, New Millennium School, and ultimately, the Indian School of Bahrain, where I completed my 12th grade.",
       "My interest in technology started early. I remember working with friends to create a website for our school. While I wasn’t fully committed back then, I was fascinated by the idea of creating something that others could use.",
       "These formative years planted the seed for my tech aspirations and set me on the path to solving complex challenges.",
+      "Best part? My dad used to work for Gulf Air, the title sponsors of the Formula 1 Grand Prix in Bahrain. So, free tickets to the race!"
     ],
     tags: [TimelineTags.Education, TimelineTags.Personal],
+    imageElement: <img src={bahrainImage} alt="Bahrain" style={{ width: '80%', height: 'auto', objectFit: 'contain', borderRadius: '8px' }} />,
   },
   {
     date: { month: "JUL", year: "2015" },
     title: "Bachelor of Technology in Information Technology, COEP",
     content: [
-      "I pursued my BTech in IT at COEP, Pune, immersing myself in the world of software development.",
+      "I pursued my B.Tech in Information Technology at COEP, Pune, immersing myself in the world of software development.",
       "Along the way, I started freelancing—developing websites for a local used car dealership, an inventory management systems for a local brewery, and creating various websites for campus clubs. I was learning and building, hands-on.",
-      "I participated in events like MindSpark, Bhau Entrepreneurship Cell, and Regatta, where I won bronze medals in rowing. Regatta wasn’t just about competition—it helped me shed some weight, get fit, and build confidence!",
+      "I participated in events like MindSpark, Bhau Entrepreneurship Cell, and Regatta (I won a bronze medal in this rowing competition). Regatta was more than a rowing event—it helped me make some really good friends, I shed some weight and got fit, indirectly helping me build confidence!",
     ],
     tags: [TimelineTags.Education, TimelineTags.Personal],
+    imageElement: <img src={coepImage} alt="COEP" style={{ width: '70%', height: 'auto', objectFit: 'contain', borderRadius: '8px' }} />,
   },
 ];

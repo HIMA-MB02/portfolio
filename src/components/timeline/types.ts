@@ -19,7 +19,7 @@ export interface TimelineItemType<T extends string> {
   title: string;
   content: string[];
   tags?: T[];
-  imageSrc?: string;
+  imageElement?: React.ReactNode;
   ShowcaseButtonA?: React.ReactNode;
   ShowcaseButtonB?: React.ReactNode;
 }

@@ -63,8 +63,8 @@ const HotTakes = () => {
           <SplideSlide>
             <FillCard color="purpleGradient">
               <HotTakesCard>
-                <StyledBigText>Scalability = readability</StyledBigText>
-                <StyledSmallText>not complexity.</StyledSmallText>
+                <StyledBigText>Readable code</StyledBigText>
+                <StyledSmallText>is scalable code</StyledSmallText>
               </HotTakesCard>
             </FillCard>
           </SplideSlide>
