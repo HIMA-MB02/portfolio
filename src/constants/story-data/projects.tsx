@@ -1,5 +1,4 @@
-import { Button } from "@/atoms";
-import { ProjectGithubLinks, ProjectSiteLinks } from "..";
+import { ProjectGithubLinks } from "..";
 import {
   TimelineTags,
   TimelineItemType,
