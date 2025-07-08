@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.himanshuganapavarapu.com/sitemap.xml
+
+# Optimize crawling
+Crawl-delay: 1
+
+# Allow all image crawling
+User-agent: Googlebot-Image
+Allow: /static/
+Allow: /images/ 

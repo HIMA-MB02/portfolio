@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a1cabf2f.css",
+    "main.js": "/static/js/main.9cf6ee49.js",
+    "static/media/galacta.png": "/static/media/galacta.70969604928f0afb9673.png",
+    "static/media/bahrain.jpg": "/static/media/bahrain.897fc785c58e1fd9212b.jpg",
+    "static/media/coep.jpg": "/static/media/coep.fbf1279b8cd08038a413.jpg",
+    "static/media/blockchainJS.png": "/static/media/blockchainJS.a79b30c3732d71b8d153.png",
+    "static/media/logo-ggroup.png": "/static/media/logo-ggroup.99e17596c6e94bb0fece.png",
+    "static/media/marriage.jpg": "/static/media/marriage.75c1a2deee4808db4672.jpg",
+    "static/media/capgemini.png": "/static/media/capgemini.c51b5aff2f6e8d7e4a88.png",
+    "static/media/love.gif": "/static/media/love.9a994075408fdaa2d8b7.gif",
+    "static/media/oneplus.png": "/static/media/oneplus.8e9172db522a81e73ba3.png",
+    "static/media/gulfair.svg": "/static/media/gulfair.0dfd016c01be5a1609e036b5fcde6236.svg",
+    "static/media/react-spring.svg": "/static/media/react-spring.179b6b3136709eb745e568dd170d2384.svg",
+    "static/media/digital-trons.jpg": "/static/media/digital-trons.e086ccf30861cacb8f33.jpg",
+    "static/media/react.svg": "/static/media/react.598d90dd4f36234e376cbc6ccd571550.svg",
+    "index.html": "/index.html",
+    "static/media/email.svg": "/static/media/email.c4707c0935fb47afe9b5b22460f65a2c.svg",
+    "static/media/github-square.svg": "/static/media/github-square.8d1bc524d64f25bee143d25b34c557ac.svg",
+    "static/media/kodekloud.svg": "/static/media/kodekloud.81ea215aa9a6dfe30ab9f57191b68da9.svg",
+    "static/media/instagram.svg": "/static/media/instagram.a0a9a83448ddb5827d70493a84d37806.svg",
+    "static/media/typescript.svg": "/static/media/typescript.5a8731afb70af69ca7846c3a07080df4.svg",
+    "static/media/styled-components.svg": "/static/media/styled-components.8719f0da63cf8eaa4a4a63c801224202.svg",
+    "static/media/loop.svg": "/static/media/loop.7418088f1db165195d47d18a084f5738.svg",
+    "static/media/github.svg": "/static/media/github.4198bf40e22f7ab64741f4cd0465dfe4.svg",
+    "static/media/firebase.svg": "/static/media/firebase.8f69a13150a1594d8fb73df74f12b548.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.c341cc1c307221b0fe42599c619ceeaf.svg",
+    "static/media/cross.svg": "/static/media/cross.30252da164c2bf87d2c1f49ad612319b.svg",
+    "static/media/down-arrow.svg": "/static/media/down-arrow.b89a25be1975abf0a5a8886b35b5498f.svg",
+    "main.a1cabf2f.css.map": "/static/css/main.a1cabf2f.css.map",
+    "main.9cf6ee49.js.map": "/static/js/main.9cf6ee49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1cabf2f.css",
+    "static/js/main.9cf6ee49.js"
+  ]
+}

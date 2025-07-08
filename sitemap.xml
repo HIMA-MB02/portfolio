@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage - Highest Priority -->
+  <url>
+    <loc>https://www.himanshuganapavarapu.com/</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.himanshuganapavarapu.com/himanshu.png</image:loc>
+      <image:title>Himanshu Ganapavarapu - Full Stack Developer</image:title>
+      <image:caption>Creative Full Stack Developer and Software Engineer</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- My Story Page -->
+  <url>
+    <loc>https://www.himanshuganapavarapu.com/my-story</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Get In Touch Page -->
+  <url>
+    <loc>https://www.himanshuganapavarapu.com/get-in-touch</loc>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset> 
