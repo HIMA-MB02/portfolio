@@ -5,6 +5,25 @@
     <link rel="icon" href="%PUBLIC_URL%/himanshu.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-[YOUR-GTM-ID]');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-[YOUR-GA4-ID]"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-[YOUR-GA4-ID]');
+    </script>
+    <!-- End Google Analytics -->
+
     <!-- Primary Meta Tags -->
     <meta name="title" content="Himanshu's Portfolio - Creative Full Stack Developer">
     <meta name="description" content="Explore Himanshu's stunning portfolio featuring beautiful web applications, creative UI designs, and innovative full stack development projects. Experience seamless animations, modern design patterns, and technical excellence.">
@@ -34,6 +53,9 @@
     serverless architecture, cloud computing, AWS Lambda, S3 storage, EC2 instances,
     Redis caching, message queues, web security, CORS handling, XSS prevention">
     <meta name="author" content="Himanshu">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="[REPLACE-WITH-YOUR-VERIFICATION-CODE]" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -68,9 +90,39 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Comforter+Brush&family=Major+Mono+Display&family=Moderustic:wght@400;700&display=swap">
     </noscript>
     
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+    
     <title>Himanshu's Portfolio</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-[YOUR-GTM-ID]"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

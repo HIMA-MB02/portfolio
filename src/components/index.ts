@@ -8,6 +8,7 @@ import MyMantrasSection from "./my-mantras-section";
 import BuiltWithSection from "./built-with-section";
 import Timeline from "./timeline";
 import HotTakes from "./hot-takes";
+import SEO from "./seo";
 
 export {
     Navigator,
@@ -19,5 +20,6 @@ export {
     MyMantrasSection,
     BuiltWithSection,
     Timeline,
-    HotTakes
-}
+    HotTakes,
+    SEO
+};

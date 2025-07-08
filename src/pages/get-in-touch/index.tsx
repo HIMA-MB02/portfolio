@@ -18,13 +18,20 @@ import {
   StyledTitleWrapper,
   StyledFillCardWrapper,
 } from "./styles";
-import { NavigationBar } from "../../components";
+import { NavigationBar, SEO } from "../../components";
 import { ExternalLinks, PageTitles } from "../../constants";
+import { createPersonStructuredData } from "@/utils/structuredData";
 
 export default function GetInTouch() {
   const openLink = (link: ExternalLinks) => window.open(link, '_blank');
   return (
     <StyledContainer>
+      <SEO 
+        title="Contact Himanshu Ganapavarapu - Senior Frontend Engineer"
+        description="Connect with Himanshu Ganapavarapu for exciting opportunities in frontend engineering, full stack development, or technical leadership roles. Available for meaningful conversations about technology, innovation, and collaboration."
+        pageType="profile"
+        structuredData={[createPersonStructuredData()]}
+      />
       <NavigationBar />
       <StyledCardWrapper>
         <StyledTitleWrapper>
