@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://himanshuganapavarapu.com/sitemap.xml
+Sitemap: https://www.himanshuganapavarapu.com/sitemap.xml
 
 # Optimize crawling
 Crawl-delay: 1
